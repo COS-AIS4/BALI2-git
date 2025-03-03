@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Dictionnaire des produits du magasin
 magasin = {
     "produits": [
@@ -9,6 +11,10 @@ magasin = {
     ]
 }
 
-# Vérification du contenu du dictionnaire
+# Création d'un DataFrame
+df = pd.DataFrame(magasin["produits"])
+
+# Vérification
 if __name__ == "__main__":
-    print("Dictionnaire des produits :", magasin)
+    print(df)
+

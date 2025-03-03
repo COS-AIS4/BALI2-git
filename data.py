@@ -14,7 +14,11 @@ magasin = {
 # Création d'un DataFrame
 df = pd.DataFrame(magasin["produits"])
 
+# Sauvegarde en fichier CSV
+df.to_csv("data.csv", index=False)
+
 # Vérification
 if __name__ == "__main__":
+    print("Données enregistrées dans data.csv")
     print(df)
 
